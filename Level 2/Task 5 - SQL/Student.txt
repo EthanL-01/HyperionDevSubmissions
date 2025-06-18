@@ -1,0 +1,52 @@
+# Creates a table with fields for the following data:
+create table Student(
+    STU_NUM char(6),
+    STU_SNAME varchar(15),
+    STU_FNAME varchar (15),
+    STU_INITIAL char(1),
+    STU_STARTDATE date,
+    COURSE_CODE char(3),
+    PROJ_NUM int,
+    PRIMARY KEY (STU_NUM)
+    );
+
+# Inserts each student into the table, creating records for each 
+# containing fields with the relevant information
+insert into Student(STU_NUM, STU_SNAME, STU_FNAME, STU_INITIAL,
+STU_STARTDATE, COURSE_CODE, PROJ_NUM)
+values
+    ('01', 'Snow', 'Jon', 'E', '2014-04-05', '201', 6),
+    ('02', 'Stark', 'Arya', 'C', '2017-07-12', '305', 11),
+    ('03', 'Lannister', 'Jamie', 'C', '2012-09-05', '101', 2),
+    ('04', 'Lannister', 'Cercei', 'J', '2012-09-05', '101', 2),
+    ('05', 'Greyjoy', 'Theon', 'I', '2015-12-09', '402', 14),
+    ('06', 'Tyrell', 'Margaery', 'Y', '2017-07-12', '305', 10),
+    ('07', 'Baratheon', 'Tommen', 'R', '2019-06-13', '201', 5);
+
+# Selects all students with COURSE_CODE '305'
+select *
+from Student
+where COURSE_CODE = '305';
+
+# Updates the COURSE_CODE to '304' for the student with STU_NUM '07'
+update Student
+set COURSE_CODE = '304'
+where STU_NUM = '07';
+
+# Deletes the designated student from the Student table
+delete
+from Student
+where STU_FNAME = 'Jamie' and
+STU_SNAME = 'Lannister' and
+STU_STARTDATE = '2012-09-05' and
+COURSE_CODE = '101' and
+PROJ_NUM = 2;
+
+# Updates the PROJ_NUM to 14 for student records matching 
+# the operation constraints
+update Student
+set PROJ_NUM = 14
+where STU_STARTDATE < '2016-01-01' and COURSE_CODE >= '201';
+
+# Deletes the Student table
+drop table Student;

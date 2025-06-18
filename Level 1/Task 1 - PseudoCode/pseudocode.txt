@@ -1,0 +1,79 @@
+	Example 1:
+
+define x as an empty list
+
+loop until input equals 0
+	request input from the user
+	if input is greater than 0
+		add input to x
+	else
+		print "Invalid input" 
+		request input from the user again
+
+print the largest integer stored in x
+
+---
+
+
+	Example 2:
+
+define variable first_name 
+
+request input from the user
+	store the input in first_name
+
+print first_name + " Hello, World"
+
+
+---
+
+
+	Example 3:
+
+define y as 0
+define z as 0
+define number_sum
+define number_average
+
+define x as an empty list
+
+loop the following until user inputs y
+	request integer input from the user and store it in x
+	add 1 to z
+
+	if input equals y
+		calculate the total of all integers contained in x and store in number_sum
+		stop requesting input
+
+divide number_sum by z and store in number_average
+	print number_average
+	
+
+---
+
+
+	Example 4:
+
+define x as a list containing [baked beans, portable stove, matches, camping chair]
+
+request input from user and remove any corresponding input from x
+	print "Remaining items: " + x in alphabetical order
+
+
+---
+
+
+	Example 5:
+
+define x 
+	request input from user and store in x
+define y
+	request input from user and store in y
+
+define S as x + y
+define A as S divided by 2
+define P as x multiplied by y
+
+print S
+print A
+print P

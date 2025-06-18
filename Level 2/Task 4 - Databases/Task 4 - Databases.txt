@@ -1,0 +1,63 @@
+1. Define the following:
+
+a) Data:
+    - Data is raw unprocessed information, such as characters and integers
+b) Field:
+    - A field is a single piece of information in a column stored in a table
+      comprised of data which represents something specific,
+      eg. a phone number
+c) Record:
+    - A record is a set of logically linked fields, giving the data
+      stored in each field further meaning in relation to one another
+d) File:
+    - A file is a collection of related records which even further gives its'
+      records, fields, and the data contained within further meaning
+
+2. What is a DMBS and what are it's advantages?
+
+    - DBMS stands for Database Management System
+
+    - A DBMS allows for easier sharing and accessing stored data 
+
+    - Using a DBMS is useful for providing a user interface to provide a
+      clearer, more user friendly method of accessing a database to make 
+      better more informed decisions
+
+    - Using a DBMS helps reduce inconsistencies in accessing, modifying and
+      presenting data in a database to the end user, utilizing data 
+      validation methods to correctly assess the validity of the information 
+      being input in order to maintain the databases accuracy and integrity
+
+    - Using a DBMS allows the user to quickly search for the relevant data
+
+3. Explain the difference between data and information:
+    - Data is raw facts, while information is data which has been processed
+      and interpreted to have meaning, the characters "2+2" is an example of
+      data whereas the integer result "=4" is information, which relies on
+      the context of the operation and the information's use
+
+4. What is Metadata?
+
+    - Metadata is the data associated with data, it provides information 
+      related to that raw data such as the co-ordinates where a picture is
+      taken, the timestamp of a social media post, the engagement statistics
+      of a particular ad etc.
+
+      This is useful to give additional context to the original data to
+      help process it into meaningful information.
+
+5. Given the file below (in the .pdf), answer the following questions:
+
+e) How many records does the file contain?
+    - The file contains four records
+
+f) How many fields are there per record?
+    - There are five fields per record, each containing relevant data 
+      to each other field in the record such as their Project Code, 
+      Project Manager, Manager's Phone Number etc.
+    - The record includes the following fields:
+      1. PROJECT_CODE
+      2. PROJECT_MANAGER
+      3. MANAGER_PHONE
+      4. MANAGER_ADDRESS
+      5. PROJECT_BID_PRICE
